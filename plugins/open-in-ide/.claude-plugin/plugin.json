@@ -5,6 +5,7 @@
   "author": { "name": "NibbleByte" },
   "homepage": "https://github.com/NibbleByte/claude-plugins/tree/master/plugins/open-in-ide",
   "repository": "https://github.com/NibbleByte/claude-plugins",
+  "license": "MIT",
   "userConfig": {
     "editor": {
       "type": "string",
