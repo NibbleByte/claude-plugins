@@ -1,0 +1,2 @@
+# Type definitions Claude Code writes into a mod's folder while it loads the mod
+.claude-plugin/types/

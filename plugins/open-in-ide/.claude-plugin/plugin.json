@@ -1,0 +1,34 @@
+{
+  "name": "open-in-ide",
+  "version": "0.10.0",
+  "description": "Adds a button for each source file Claude's replies mention (C++, C#, shaders, web, scripts, config) that opens it at the line in Rider, Visual Studio, VS Code or any editor you give a command for. Understands Unity and Unreal projects. (Windows only)",
+  "author": { "name": "NibbleByte" },
+  "userConfig": {
+    "editor": {
+      "type": "string",
+      "title": "Editor",
+      "description": "Which IDE opens the files (the /open-in-ide command overrides it). auto: the first of Rider, Visual Studio and VS Code that is running, else installed. custom: the Custom command below.",
+      "options": ["auto", "rider", "visualstudio", "vscode", "custom"],
+      "default": "auto"
+    },
+    "customCommand": {
+      "type": "string",
+      "title": "Custom command",
+      "description": "The command line the custom editor runs, with {file}, {line}, {column} and {folder} (the session's folder) filled in, e.g. \"C:\\Programs\\Notepad++\\notepad++.exe\" -n{line} \"{file}\". /open-in-ide custom <command> overrides it.",
+      "default": ""
+    },
+    "buttons": {
+      "type": "string",
+      "title": "Button placement",
+      "description": "Where the file buttons appear: paragraph (under the paragraph that mentions the file) or end (all at the end of the reply). /open-in-ide buttons overrides it.",
+      "options": ["paragraph", "end"],
+      "default": "paragraph"
+    },
+    "riderPath": {
+      "type": "string",
+      "title": "Rider executable",
+      "description": "Full path to rider64.exe. Leave empty to use the newest installed Rider.",
+      "default": ""
+    }
+  }
+}

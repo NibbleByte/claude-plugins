@@ -1,0 +1,14 @@
+{
+  "name": "devlocker",
+  "description": "DevLocker plugins and mods for Claude Code, by Filip Slavov (NibbleByte)",
+  "owner": {
+    "name": "NibbleByte"
+  },
+  "plugins": [
+    {
+      "name": "open-in-ide",
+      "source": "./plugins/open-in-ide",
+      "description": "A button for each source file Claude's replies mention, opening it at the line in Rider, Visual Studio, VS Code or any editor you give a command for. Understands Unity and Unreal projects. (Windows only)"
+    }
+  ]
+}
