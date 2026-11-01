@@ -3,6 +3,8 @@
   "version": "0.10.0",
   "description": "Adds a button for each source file Claude's replies mention (C++, C#, shaders, web, scripts, config) that opens it at the line in Rider, Visual Studio, VS Code or any editor you give a command for. Understands Unity and Unreal projects. (Windows only)",
   "author": { "name": "NibbleByte" },
+  "homepage": "https://github.com/NibbleByte/claude-plugins/tree/master/plugins/open-in-ide",
+  "repository": "https://github.com/NibbleByte/claude-plugins",
   "userConfig": {
     "editor": {
       "type": "string",
